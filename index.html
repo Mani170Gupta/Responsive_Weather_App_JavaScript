@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather and Air Quality Information</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="input-section">
+      <h1>Weather and Air Quality Info</h1>
+      <p>Enter the city name to get details</p>
+      <input id="city" type="search" placeholder="Enter city name..." />
+
+      <button id="btn">Search</button>
+      <p id="EnterCorrectCity"></p>
+    </div>
+
+    <div class="grid">
+      <div class="box">
+        <h4>Location Description</h4>
+        <p id="lat">Latitude: --</p>
+        <p id="lon">Longitude: --</p>
+        <p id="tz_id">Timezone: --</p>
+        <p id="name">Location: --</p>
+        <p id="region">Region: --</p>
+      </div>
+
+      <div id="air_quality" class="box">
+        <h4>Air Quality</h4>
+        <p id="co">CO: --</p>
+        <p id="no2">NO2: --</p>
+        <p id="o3">O3: --</p>
+        <p id="so2">SO2: --</p>
+        <p id="pm25">PM 2.5: --</p>
+      </div>
+
+      <div id="weather_info" class="box">
+        <h4>Weather Information</h4>
+        <p id="temp">Temperature: --</p>
+        <p id="feelslike">Feels Like: --</p>
+        <p id="wind">Wind Speed: --</p>
+        <p id="pressure">Pressure: --</p>
+        <p id="humidity">Humidity: --</p>
+      </div>
+
+      <div id="visibility_info" class="box">
+        <h4>More Weather Info</h4>
+        <p id="cloud">Cloud Coverage: --</p>
+        <p id="uv">UV Index: --</p>
+        <p id="visibility">Visibility: --</p>
+        <p id="gust">Gust Speed: --</p>
+        <p id="last_updated">Last Updated: --</p>
+      </div>
+
+      <div id="condition_info" class="box">
+        <h4>Condition</h4>
+        <p id="condition">Condition: --</p>
+      </div>
+      <div class="image">
+        <img src="weather-change.png" alt="" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
